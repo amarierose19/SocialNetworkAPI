@@ -20,3 +20,5 @@ mongoose.set('debug', true)
 app.listen(PORT, () => {
     console.log(`listening at http://localhost:${PORT}`)
 })
+
+module.exports = mongoose.connection;
